@@ -30,7 +30,8 @@ select * from employees
 where firstname LIKE 'j%';
  
 -- find all Macbooks --
-select * from Macbooks;
+select * from products
+where Macbooks;
  
 -- find all products that are on sale
 select * from products
