@@ -34,10 +34,11 @@ select * from Macbooks;
  
 -- find all products that are on sale
 select * from products
-order by On_Sale desc; 
+where On_Sale 
+order by price desc; 
  
 -- find the average price of all products --
-select avg(products) from products;
+select avg(price) from products;
  
 -- find all Geek Squad employees who don't have a middle initial --
 select * from employees
