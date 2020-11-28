@@ -19,30 +19,30 @@ order by p.price desc;
  
 -- find all employees who don't have a middle initial
 select * from employees as e
-where e.middle_initial is NULL; 
+where e.middleinitial is NULL; 
  
 -- find distinct product prices
-select distinct p.price from products;
+select distinct price from products;
 
  
 -- find all employees whose first name starts with the letter ‘j’
-select * from employees
+select * from employees as e
 where e.firstname LIKE 'j%';
  
 -- find all Macbooks --
-select * from prodcuts
-where p.product = Macbooks;
+select * from products
+where Name = 'Macbook';
  
 -- find all products that are on sale
 select * from products
-WHERE p.Products = OnSale;
+WHERE Products.OnSale =1;
  
 -- find the average price of all products --
 select avg(p.price) from products;
  
 -- find all Geek Squad employees who don't have a middle initial --
-select * from employees
-where e.MiddleInitial is null AND title= 'Geek Squad' ;
+select * from employees as e
+where MiddleInitial is null AND title= 'Geek Squad' ;
 
  
 -- find all products from the products table whose stock level is in the range of 500 to 1200. 
